@@ -28,3 +28,7 @@ def determine_winner(user_choice, computer_choice):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/')
+def home():
+    return render_template('app.html')
